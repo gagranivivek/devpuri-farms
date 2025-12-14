@@ -1,0 +1,44 @@
+.navbar {
+    background-color: var(--color-surface);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    /* Reduced padding since logo offers height */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logoImage {
+    object-fit: contain;
+    border-radius: 50%;
+    /* Optional: if the logo is circular/badge style */
+}
+
+.navLinks {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+}
+
+.link {
+    font-weight: 500;
+    color: var(--color-text);
+    transition: color 0.2s;
+    font-size: 1.05rem;
+}
+
+.link:hover {
+    color: var(--color-primary);
+}

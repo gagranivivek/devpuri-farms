@@ -1,66 +1,47 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <main>
+      <section className={styles.hero}>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src="/hero.png"
+          alt="Sustainable Farm at Sunrise"
+          fill
           priority
+          className={styles.heroImage}
         />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+        <div className={styles.heroContent}>
+          <h1 className={styles.title}>Welcome to Devpuri Farms</h1>
+          <p className={styles.subtitle}>Cultivating a sustainable future for our community and the planet.</p>
+          <Link href="/about" className={styles.ctaButton}>
+            Learn More About Us
+          </Link>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className={`container ${styles.highlights}`}>
+        <h2 className={styles.sectionTitle}>Why Choose Devpuri Farms?</h2>
+        <div className={styles.cardGrid}>
+          <div className={styles.card}>
+            <span className={styles.cardIcon}>🌱</span>
+            <h3>Organic Practices</h3>
+            <p>100% chemical-free farming. We believe in working with nature, not against it.</p>
+          </div>
+          <div className={styles.card}>
+            <span className={styles.cardIcon}>🚜</span>
+            <h3>Community Focused</h3>
+            <p>Bringing fresh, local produce directly to your table through our CSA program.</p>
+          </div>
+          <div className={styles.card}>
+            <span className={styles.cardIcon}>☀️</span>
+            <h3>Sustainable Future</h3>
+            <p>Using solar power and regenerative agriculture to protect our land for generations.</p>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }

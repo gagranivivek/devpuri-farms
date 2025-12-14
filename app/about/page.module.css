@@ -1,0 +1,21 @@
+.main {
+    padding: 4rem 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.content h2 {
+    margin-top: 2rem;
+    color: var(--color-secondary);
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1765640256423,
+    "name": "lemon",
+    "price": "Rs 20/KG",
+    "description": "Lemons",
+    "image": "/uploads/1765640256418-lemon.jpg"
+  },
+  {
+    "id": 1765701849541,
+    "name": "Amla",
+    "price": "Rs 20/KG",
+    "description": "Organic Chakaiya Amla",
+    "image": "/uploads/1765701849538-amla.jpeg"
+  }
+]
