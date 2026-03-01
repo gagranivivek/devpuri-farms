@@ -1,7 +1,30 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## 🚀 Deployment
+
+This project is automatically deployed to GitHub Pages via GitHub Actions.
+
+### Deployment Guides
+- **[DEPLOYMENT.md](DEPLOYMENT.md)** - Complete deployment and GitHub Pages setup guide
+- **[DNS_SETUP.md](DNS_SETUP.md)** - DNS configuration guide for custom domain
+
+### Quick Start Deployment
+```bash
+# Make changes and commit
+git add .
+git commit -m "Your changes"
+git push origin main
+
+# That's it! GitHub Actions will automatically build and deploy
+```
+
+**No manual deployment needed!** Every push to `main` triggers automatic deployment.
+
+---
+
 ## Getting Started
 
+### Local Development
 First, run the development server:
 
 ```bash
@@ -17,6 +40,19 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+
+### Building for Production
+```bash
+# Build the Next.js app
+npm run build
+
+# Export to static files
+npm run export
+
+# Output will be in the 'out/' directory
+```
+
+---
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
