@@ -12,8 +12,7 @@ const nextConfig = {
   // For GitHub Pages static export during build
   ...(process.env.NODE_ENV === 'production' && {
     output: 'export',
-    basePath: '/devpuri-farms',
-    assetPrefix: '/devpuri-farms/',
+    // No basePath needed - using root domain (devpurifarms.com)
   }),
 };
 

@@ -2,14 +2,13 @@
 
 import Link from 'next/link';
 import styles from './page.module.css';
-import { getImagePath } from '@/lib/imageUtils';
 
 export default function Home() {
   return (
     <main>
       <section className={styles.hero}>
         <img
-          src={getImagePath('/hero.png')}
+          src="/hero.png"
           alt="Sustainable Farm at Sunrise"
           className={styles.heroImage}
         />

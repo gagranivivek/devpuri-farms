@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import styles from './Navbar.module.css';
-import { getImagePath } from '@/lib/imageUtils';
 
 export default function Navbar() {
     return (
@@ -10,7 +9,7 @@ export default function Navbar() {
             <div className={`container ${styles.container}`}>
                 <Link href="/" className={styles.logoWrapper}>
                     <img
-                        src={getImagePath('/logo.jpg')}
+                        src="/logo.jpg"
                         alt="Devpuri Farms Logo"
                         className={styles.logoImage}
                     />

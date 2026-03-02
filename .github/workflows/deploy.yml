@@ -37,7 +37,6 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
-          NEXT_PUBLIC_BASE_PATH: /devpuri-farms
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
