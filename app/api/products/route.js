@@ -2,6 +2,9 @@ import { NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
 
+// Mark this route as static for static export
+export const dynamic = 'force-static';
+
 const dataFilePath = path.join(process.cwd(), 'data', 'products.json');
 const uploadDir = path.join(process.cwd(), 'public', 'uploads');
 

@@ -43,13 +43,9 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 ### Building for Production
 ```bash
-# Build the Next.js app
-npm run build
-
-# Export to static files
-npm run export
-
+# Build the Next.js app and export to static files
 # Output will be in the 'out/' directory
+npm run build
 ```
 
 ---

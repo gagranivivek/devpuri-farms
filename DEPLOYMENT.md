@@ -137,16 +137,15 @@ The workflow in `.github/workflows/deploy.yml` automatically runs when:
 
 ### What the Workflow Does
 1. Checks out your code
-2. Sets up Node.js v18
+2. Sets up Node.js v20
 3. Installs npm dependencies
-4. Builds the Next.js app (`npm run build`)
-5. Exports to static files (`npm run export`)
-6. Uploads the `out/` folder to GitHub Pages
-7. Deploys to your GitHub Pages site
+4. Builds the Next.js app and exports to static files (`npm run build`)
+5. Uploads the `out/` folder to GitHub Pages
+6. Deploys to your GitHub Pages site
 
 ### Build Environment
 - **OS**: Ubuntu latest
-- **Node.js**: v18
+- **Node.js**: v20
 - **NPM**: Latest (cached for speed)
 
 ---
@@ -164,9 +163,8 @@ npm run dev
 
 ### Production Build (What Deploys)
 ```bash
-# Build and export (run locally to test)
+# Build (automatically exports to out/ folder)
 npm run build
-npm run export
 ```
 - Static files generated in `out/` folder
 - No Node.js runtime needed
@@ -222,9 +220,8 @@ npm install
 # Development server
 npm run dev
 
-# Build and export (test locally)
+# Build and export to static files (out/ folder)
 npm run build
-npm run export
 
 # Deploy changes
 git add .

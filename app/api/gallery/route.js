@@ -3,6 +3,9 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import DOMPurify from 'isomorphic-dompurify';
 
+// Mark this route as static for static export
+export const dynamic = 'force-static';
+
 const dataFilePath = path.join(process.cwd(), 'data', 'gallery.json');
 const uploadDir = path.join(process.cwd(), 'public', 'uploads');
 
