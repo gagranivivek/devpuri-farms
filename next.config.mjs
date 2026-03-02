@@ -12,9 +12,8 @@ const nextConfig = {
   // For GitHub Pages static export during build
   ...(process.env.NODE_ENV === 'production' && {
     output: 'export',
-    // Use custom domain without basePath. If serving from repo subdomain, uncomment these:
-    // basePath: '/devpuri-farms-analysis',
-    // assetPrefix: '/devpuri-farms-analysis/',
+    basePath: '/devpuri-farms',
+    assetPrefix: '/devpuri-farms/',
   }),
 };
 
