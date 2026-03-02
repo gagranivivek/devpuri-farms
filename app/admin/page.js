@@ -46,7 +46,7 @@ export default function Admin() {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        if (password === 'harvest') {
+        if (password === process.env.NEXT_PUBLIC_ADMIN_PASSWORD) {
             setIsAuthenticated(true);
         } else {
             alert('Incorrect password');
