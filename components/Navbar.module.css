@@ -23,6 +23,8 @@
     object-fit: contain;
     border-radius: 50%;
     /* Optional: if the logo is circular/badge style */
+    width: 80px;
+    height: 80px;
 }
 
 .navLinks {

@@ -1,16 +1,13 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import styles from './page.module.css';
 
 export default function Home() {
   return (
     <main>
       <section className={styles.hero}>
-        <Image
-          src="/hero.png"
+        <img
+          src="/devpuri-farms/hero.png"
           alt="Sustainable Farm at Sunrise"
-          fill
-          priority
           className={styles.heroImage}
         />
         <div className={styles.heroContent}>

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
@@ -7,13 +6,10 @@ export default function Navbar() {
         <nav className={styles.navbar}>
             <div className={`container ${styles.container}`}>
                 <Link href="/" className={styles.logoWrapper}>
-                    <Image
-                        src="/logo.jpg"
+                    <img
+                        src="/devpuri-farms/logo.jpg"
                         alt="Devpuri Farms Logo"
-                        width={80}
-                        height={80}
                         className={styles.logoImage}
-                        priority
                     />
                 </Link>
                 <ul className={styles.navLinks}>
