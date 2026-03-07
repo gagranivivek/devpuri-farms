@@ -1,9 +1,11 @@
 'use client';
 
+import { useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useProducts } from '@/context/ProductsContext';
 import { useLanguage } from '@/context/LanguageContext';
 import ProduceSidebar from '@/components/ProduceSidebar';
+import ProductModal from '@/components/ProductModal';
 import styles from './page.module.css';
 
 export default function Produce() {
@@ -11,6 +13,7 @@ export default function Produce() {
     const { t } = useLanguage();
     const searchParams = useSearchParams();
     const selectedId = searchParams.get('id');
+    const [selectedProduct, setSelectedProduct] = useState(null);
 
     const displayProducts = selectedId
         ? products.filter((p) => p.id === parseInt(selectedId))
@@ -30,7 +33,12 @@ export default function Produce() {
                     <div className={styles.grid}>
                         {displayProducts.length > 0 ? (
                             displayProducts.map((product) => (
-                                <div key={product.id} className={styles.card}>
+                                <div 
+                                    key={product.id} 
+                                    className={styles.card}
+                                    onClick={() => setSelectedProduct(product)}
+                                    style={{ cursor: 'pointer' }}
+                                >
                                     <div className={styles.imageContainer}>
                                         {product.image && !product.image.includes('placeholder') ? (
                                             <img src={product.image} alt={product.name} className={styles.productImage} />
@@ -53,6 +61,8 @@ export default function Produce() {
                     </div>
                 </div>
             </div>
+
+            <ProductModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />
         </main>
     );
 }
