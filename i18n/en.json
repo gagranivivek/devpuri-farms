@@ -25,11 +25,24 @@
     }
   },
   "about": {
-    "title": "About Devpuri Farms",
-    "story": "Founded in 2010, Devpuri Farms has been dedicated to bringing the freshest, most nutritious produce to our local community.",
-    "journey": "Our story began with a small patch of land and a big dream: to farm in a way that heals the earth rather than harms it.",
-    "mission": "Our Mission",
-    "missionText": "To provide sustainable food security for our region while practicing regenerative agriculture that restores soil health."
+    "title": "Roots That Run Deep: The Gagrani Legacy",
+    "whoWeAre": "Who We Are: A Heritage of Stewardship",
+    "story": "For generations, the Gagrani family has been more than just a name in our region; it has been a promise. We come from a long line of farmers who believe that the land is not a resource to be exploited, but a gift to be guarded. To us, farming isn't just a business—it's a school of thought centered on treating Mother Earth with the utmost respect.",
+    "legacy": "When you hear the Gagrani name, you hear a story of people who have spent decades helping their neighbors and nurturing the soil. We take immense pride in being a family the community can vouch for—yesterday, today, and for generations to come.",
+    "problem": "The Problem: A World Disconnected from its Food",
+    "problemText": "We believe that everyone deserves a seat at Nature's table. Unfortunately, we live in a world where most people no longer have the space or time to grow their own food. This distance has created a 'trust gap' where consumers are left wondering where their produce came from, how it was treated, and who actually touched it.",
+    "mission": "Our Mission: An Ecosystem of Trust",
+    "missionIntro": "We are here to bridge that gap. Our goal is to reestablish the sacred bond between the grower and the consumer. We aren't just selling produce; we are inviting you into our ecosystem.",
+    "noMiddlemen": "No Middlemen, No Mystery",
+    "noMiddlemenText": "We don't buy from mass markets or deal with outside agents. If it's on your table, it came from our fields or the fields of local farmers we trust like our own family.",
+    "sustainable": "Sustainably Grown",
+    "sustainableText": "Every fruit and vegetable is grown naturally, ensuring that we leave the earth better than we found it.",
+    "locallyRooted": "Locally Rooted",
+    "locallyRootedText": "Everything we offer is grown right here in our area by people we know by name.",
+    "reach": "Always Within Reach",
+    "reachText": "Authenticity shouldn't be hard to find. We believe in being accessible to everyone, all the time. Whether you have a question about our methods or simply want to know more about where your food comes from, our doors (and our fields) are open.",
+    "closing": "Our intention is simple: to make genuine, honest produce available to our community, backed by a family name you can trust.",
+    "quote": "From our family's hands to your home—pure, local, and honest."
   },
   "practices": {
     "title": "Our Sustainable Practices",

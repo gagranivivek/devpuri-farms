@@ -1,12 +1,12 @@
 .main {
     padding: var(--spacing-3xl) var(--spacing-md);
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .title {
     font-size: 2.5rem;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-3xl);
     text-align: center;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     -webkit-background-clip: text;
@@ -26,12 +26,6 @@
     }
 }
 
-.content {
-    max-width: 900px;
-    margin: 0 auto;
-    animation: fadeInUp 0.6s ease-out 0.2s both;
-}
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -43,23 +37,25 @@
     }
 }
 
-.content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--color-text-light);
-    margin-bottom: var(--spacing-lg);
+.section {
+    margin-bottom: var(--spacing-3xl);
+    animation: fadeInUp 0.6s ease-out backwards;
 }
 
-.content h2 {
-    margin-top: var(--spacing-2xl);
-    margin-bottom: var(--spacing-md);
-    color: var(--color-primary);
+.section:nth-child(2) { animation-delay: 0.1s; }
+.section:nth-child(3) { animation-delay: 0.2s; }
+.section:nth-child(4) { animation-delay: 0.3s; }
+.section:nth-child(5) { animation-delay: 0.4s; }
+
+.sectionTitle {
     font-size: 1.75rem;
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-primary);
     position: relative;
     padding-bottom: var(--spacing-md);
 }
 
-.content h2::after {
+.sectionTitle::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -70,6 +66,88 @@
     border-radius: var(--radius-full);
 }
 
+.text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+}
+
+.missionGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-2xl);
+}
+
+.missionCard {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.missionCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-base);
+}
+
+.missionCard:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.missionCard:hover::before {
+    transform: scaleX(1);
+}
+
+.missionCard h3 {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.missionCard p {
+    color: var(--color-text-light);
+    line-height: 1.7;
+}
+
+.closing {
+    background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+    padding: var(--spacing-3xl);
+    border-radius: var(--radius-2xl);
+    text-align: center;
+    margin-top: var(--spacing-3xl);
+    animation: fadeInUp 0.6s ease-out 0.5s both;
+}
+
+.closingText {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.8;
+}
+
+.quote {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .main {
@@ -78,16 +156,41 @@
 
     .title {
         font-size: 2rem;
+        margin-bottom: var(--spacing-2xl);
+    }
+
+    .sectionTitle {
+        font-size: 1.5rem;
         margin-bottom: var(--spacing-lg);
     }
 
-    .content p {
+    .text {
         font-size: 1rem;
         line-height: 1.7;
     }
 
-    .content h2 {
-        font-size: 1.5rem;
-        margin-top: var(--spacing-xl);
+    .missionGrid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .missionCard {
+        padding: var(--spacing-lg);
+    }
+
+    .missionCard h3 {
+        font-size: 1.1rem;
+    }
+
+    .closing {
+        padding: var(--spacing-2xl) var(--spacing-xl);
+    }
+
+    .closingText {
+        font-size: 1.1rem;
+    }
+
+    .quote {
+        font-size: 1.1rem;
     }
 }
