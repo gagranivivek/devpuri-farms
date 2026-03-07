@@ -10,6 +10,10 @@ export default function About() {
         <main className={styles.main}>
             <h1 className={styles.title}>{t('about.title')}</h1>
             
+            <div className={styles.heroImage}>
+                <img src="/uploads/about-founder.jpg" alt="Devpuri Farms Founder" />
+            </div>
+            
             <section className={styles.section}>
                 <h2 className={styles.sectionTitle}>{t('about.whoWeAre')}</h2>
                 <p className={styles.text}>{t('about.story')}</p>
