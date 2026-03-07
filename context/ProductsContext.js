@@ -1,6 +1,7 @@
 'use client';
 
 import { createContext, useContext, useState, useEffect } from 'react';
+import productsData from '@/data/products.json';
 
 const ProductsContext = createContext();
 
@@ -8,22 +9,11 @@ export function ProductsProvider({ children }) {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    // Fetch products on mount
+    // Load products on mount
     useEffect(() => {
-        fetchProducts();
+        setProducts(productsData);
+        setLoading(false);
     }, []);
-
-    const fetchProducts = async () => {
-        try {
-            const res = await fetch('/api/products');
-            const data = await res.json();
-            setProducts(data);
-        } catch (error) {
-            console.error('Failed to fetch products:', error);
-        } finally {
-            setLoading(false);
-        }
-    };
 
     const addProduct = async (productData) => {
         // productData is expecting simple object, but for file upload we need FormData
