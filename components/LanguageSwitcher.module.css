@@ -1,0 +1,48 @@
+.switcher {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-full);
+    backdrop-filter: blur(4px);
+}
+
+.langButton {
+    background: none;
+    border: none;
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.langButton:hover {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--color-primary);
+}
+
+.langButton.active {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.divider {
+    color: var(--color-border);
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .switcher {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        gap: 4px;
+    }
+
+    .langButton {
+        font-size: 0.8rem;
+        padding: 4px 6px;
+    }
+}

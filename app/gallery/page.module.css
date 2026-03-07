@@ -1,65 +1,104 @@
 .main {
-    padding: 4rem 1rem;
+    padding: var(--spacing-3xl) var(--spacing-md);
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .title {
     text-align: center;
-    font-size: 3rem;
-    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInDown 0.6s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .subtitle {
     text-align: center;
     color: var(--color-text-light);
-    margin-bottom: 3rem;
+    margin-bottom: var(--spacing-3xl);
     font-size: 1.2rem;
+    animation: fadeInUp 0.6s ease-out 0.1s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .galleryGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    animation: fadeInUp 0.6s ease-out 0.2s both;
 }
 
 .galleryItem {
     background: white;
-    border-radius: 12px;
+    border-radius: var(--radius-xl);
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s;
-    border: 1px solid #E0E0E0;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-base);
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .galleryItem:hover {
-    transform: translateY(-4px);
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: var(--shadow-xl);
 }
 
 .imageWrapper {
     width: 100%;
     aspect-ratio: 1;
-    /* Keep images square */
-    background: #f5f5f5;
+    background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+    overflow: hidden;
+    position: relative;
 }
 
 .galleryImage {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform var(--transition-base);
+}
+
+.galleryItem:hover .galleryImage {
+    transform: scale(1.1);
 }
 
 .caption {
-    padding: 1rem;
-    border-top: 1px solid #f0f0f0;
+    padding: var(--spacing-lg);
+    border-top: 1px solid var(--color-border);
     flex-grow: 1;
-    /* Ensure caption takes space */
+    background: white;
 }
 
 .descriptionText {
     font-size: 1rem;
     color: var(--color-text);
-    line-height: 1.5;
+    line-height: 1.6;
     margin: 0;
 }
 
@@ -68,5 +107,38 @@
     text-align: center;
     color: var(--color-text-light);
     font-size: 1.2rem;
-    margin-top: 2rem;
+    padding: var(--spacing-3xl) var(--spacing-xl);
+    background: var(--color-surface);
+    border-radius: var(--radius-xl);
+    border: 2px dashed var(--color-border);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        padding: var(--spacing-2xl) var(--spacing-md);
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+        margin-bottom: var(--spacing-2xl);
+    }
+
+    .galleryGrid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: var(--spacing-md);
+    }
+
+    .caption {
+        padding: var(--spacing-md);
+    }
+
+    .descriptionText {
+        font-size: 0.95rem;
+    }
 }

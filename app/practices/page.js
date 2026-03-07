@@ -1,21 +1,26 @@
+'use client';
+
+import { useLanguage } from '@/context/LanguageContext';
 import styles from './page.module.css';
 
 export default function Practices() {
+    const { t } = useLanguage();
+
     return (
         <main className={`container ${styles.main}`}>
-            <h1 className={styles.title}>Our Sustainable Practices</h1>
+            <h1 className={styles.title}>{t('practices.title')}</h1>
             <div className={styles.grid}>
                 <div className={styles.practice}>
-                    <h2>Regenerative Agriculture</h2>
-                    <p>We use cover crops and no-till farming to keep carbon in the soil and improve water retention.</p>
+                    <h2>{t('practices.regenerative.title')}</h2>
+                    <p>{t('practices.regenerative.description')}</p>
                 </div>
                 <div className={styles.practice}>
-                    <h2>Water Conservation</h2>
-                    <p>Our drip irrigation systems ensure that every drop of water is used efficiently, minimizing waste.</p>
+                    <h2>{t('practices.water.title')}</h2>
+                    <p>{t('practices.water.description')}</p>
                 </div>
                 <div className={styles.practice}>
-                    <h2>Natural Pest Control</h2>
-                    <p>Instead of harsh chemicals, we rely on beneficial insects and companion planting to keep pests at bay.</p>
+                    <h2>{t('practices.pest.title')}</h2>
+                    <p>{t('practices.pest.description')}</p>
                 </div>
             </div>
         </main>

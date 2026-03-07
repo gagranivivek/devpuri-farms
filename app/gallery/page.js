@@ -1,10 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useLanguage } from '@/context/LanguageContext';
 import styles from './page.module.css';
 
 export default function Gallery() {
     const [galleryItems, setGalleryItems] = useState([]);
+    const { t } = useLanguage();
 
     // Fetch gallery items on mount
     useEffect(() => {
@@ -25,8 +27,8 @@ export default function Gallery() {
 
     return (
         <main className={`container ${styles.main}`}>
-            <h1 className={styles.title}>Farm Theory Gallery</h1>
-            <p className={styles.subtitle}>A glimpse into our sustainable farming life.</p>
+            <h1 className={styles.title}>{t('gallery.title')}</h1>
+            <p className={styles.subtitle}>{t('gallery.subtitle')}</p>
 
             <section className={styles.galleryGrid}>
                 {galleryItems.length > 0 ? (
@@ -43,7 +45,7 @@ export default function Gallery() {
                         </div>
                     ))
                 ) : (
-                    <p className={styles.emptyMessage}>No photos yet.</p>
+                    <p className={styles.emptyMessage}>{t('gallery.empty')}</p>
                 )}
             </section>
         </main>

@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "practices": "Practices",
+    "produce": "Produce",
+    "gallery": "Gallery"
+  },
+  "home": {
+    "title": "Welcome to Devpuri Farms",
+    "subtitle": "Cultivating a sustainable future for our community and the planet.",
+    "cta": "Discover Our Story",
+    "whyChoose": "Why Choose Devpuri Farms?",
+    "organic": {
+      "title": "Organic Practices",
+      "description": "100% chemical-free farming. We believe in working with nature, not against it. Our commitment to organic methods ensures the healthiest produce for your family."
+    },
+    "community": {
+      "title": "Community Focused",
+      "description": "Bringing fresh, local produce directly to your table through our CSA program. Supporting local farmers means supporting sustainable agriculture in your region."
+    },
+    "sustainable": {
+      "title": "Sustainable Future",
+      "description": "Using solar power and regenerative agriculture to protect our land for generations. Every harvest strengthens our soil and protects our environment."
+    }
+  },
+  "about": {
+    "title": "About Devpuri Farms",
+    "story": "Founded in 2010, Devpuri Farms has been dedicated to bringing the freshest, most nutritious produce to our local community.",
+    "journey": "Our story began with a small patch of land and a big dream: to farm in a way that heals the earth rather than harms it.",
+    "mission": "Our Mission",
+    "missionText": "To provide sustainable food security for our region while practicing regenerative agriculture that restores soil health."
+  },
+  "practices": {
+    "title": "Our Sustainable Practices",
+    "regenerative": {
+      "title": "Regenerative Agriculture",
+      "description": "We use cover crops and no-till farming to keep carbon in the soil and improve water retention."
+    },
+    "water": {
+      "title": "Water Conservation",
+      "description": "Our drip irrigation systems ensure that every drop of water is used efficiently, minimizing waste."
+    },
+    "pest": {
+      "title": "Natural Pest Control",
+      "description": "Instead of harsh chemicals, we rely on beneficial insects and companion planting to keep pests at bay."
+    }
+  },
+  "produce": {
+    "title": "Our Fresh Produce",
+    "subtitle": "Harvested daily, straight from our fields to your kitchen.",
+    "empty": "No products available at the moment."
+  },
+  "gallery": {
+    "title": "Farm Theory Gallery",
+    "subtitle": "A glimpse into our sustainable farming life.",
+    "empty": "No photos yet."
+  },
+  "footer": "Sustainable. Organic. Local."
+}
