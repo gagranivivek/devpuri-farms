@@ -1,17 +1,5 @@
 [
   {
-    "id": 1765640256423,
-    "name": "lemon",
-    "description": "Lemons",
-    "image": "/uploads/1765640256418-lemon.jpg"
-  },
-  {
-    "id": 1765701849541,
-    "name": "Amla",
-    "description": "Organic Chakaiya Amla",
-    "image": "/uploads/1765701849538-amla.jpeg"
-  },
-  {
     "id": 1765702000001,
     "name": "Wheat",
     "description": "Fresh Organic Wheat",
@@ -22,5 +10,17 @@
     "name": "Coriander Seeds",
     "description": "Fresh Coriander Seeds",
     "image": "/uploads/Coriander-bag.webp"
+  },
+  {
+    "id": 1765640256423,
+    "name": "lemon",
+    "description": "Lemons",
+    "image": "/uploads/1765640256418-lemon.jpg"
+  },
+  {
+    "id": 1765701849541,
+    "name": "Amla",
+    "description": "Organic Chakaiya Amla",
+    "image": "/uploads/1765701849538-amla.jpeg"
   }
 ]
