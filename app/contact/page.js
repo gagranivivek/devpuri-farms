@@ -101,6 +101,7 @@ export default function Contact() {
             >
               Open in Google Maps →
             </a>
+          </div>
         </div>
       </section>
     </main>
