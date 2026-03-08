@@ -94,7 +94,7 @@ export default function Contact() {
               ></iframe>
             </div>
             <a 
-              href="https://maps.app.goo.gl/YNVpSVg7TP2theHq8" 
+              href="https://maps.app.goo.gl/fmmRsL4q1MaEQx928" 
               target="_blank" 
               rel="noopener noreferrer"
               className={styles.openMapLink}
