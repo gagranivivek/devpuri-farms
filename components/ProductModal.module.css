@@ -211,12 +211,17 @@
     color: var(--color-primary);
 }
 
+.actionButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
+
 .actionButton {
-    width: 100%;
     padding: var(--spacing-md) var(--spacing-lg);
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-    color: white;
-    border: none;
+    background: white;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
     border-radius: var(--radius-md);
     font-size: 1rem;
     font-weight: 600;
@@ -226,11 +231,33 @@
 
 .actionButton:hover {
     transform: translateY(-2px);
+    background: var(--color-primary-light);
     box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
 }
 
 .actionButton:active {
     transform: translateY(0);
+}
+
+.contactButton {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -255,5 +282,9 @@
 
     .detailsBox {
         padding: var(--spacing-md);
+    }
+
+    .actionButtons {
+        grid-template-columns: 1fr;
     }
 }

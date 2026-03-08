@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import styles from './ProductModal.module.css';
 
 export default function ProductModal({ product, onClose }) {
@@ -52,9 +53,14 @@ export default function ProductModal({ product, onClose }) {
                             </div>
                         )}
 
-                        <button className={styles.actionButton} onClick={onClose}>
-                            Close
-                        </button>
+                        <div className={styles.actionButtons}>
+                            <button className={styles.actionButton} onClick={onClose}>
+                                Close
+                            </button>
+                            <Link href="/contact" className={styles.contactButton}>
+                                Contact Us →
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
