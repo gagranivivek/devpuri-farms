@@ -29,6 +29,7 @@ export default function Navbar() {
                     <li><Link href="/practices" className={styles.link} onClick={() => setIsOpen(false)}>{t('nav.practices')}</Link></li>
                     <li><Link href="/produce" className={styles.link} onClick={() => setIsOpen(false)}>{t('nav.produce')}</Link></li>
                     <li><Link href="/gallery" className={styles.link} onClick={() => setIsOpen(false)}>{t('nav.gallery')}</Link></li>
+                    <li><Link href="/contact" className={styles.link} onClick={() => setIsOpen(false)}>{t('nav.contact')}</Link></li>
                     <li className={styles.langSwitcherItem}>
                         <LanguageSwitcher />
                     </li>

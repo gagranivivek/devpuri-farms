@@ -9,6 +9,15 @@
     "reservation": "Since we only deal in locally grown products, supply is limited. Contact us to make a reservation for the current harvest. Note: We have a minimum quantity requirement for delivery orders, unless you prefer to collect it directly from our site."
   },
   {
+    "id": 1765702000003,
+    "name": "Black Wheat",
+    "description": "Nutrient-Rich Heritage Grain",
+    "image": "/uploads/black-wheat.jpg",
+    "details": "Premium organic black wheat grown using sustainable farming practices without synthetic pesticides. Rich in antioxidants and nutrients, this ancient grain variety brings authentic flavor and nutrition to your kitchen. Graded and processed for direct consumption.",
+    "badge": "Pre-booking Open",
+    "reservation": "Since we only deal in locally grown products, supply is limited. Contact us to make a reservation for the current harvest. Note: We have a minimum quantity requirement for delivery orders, unless you prefer to collect it directly from our site."
+  },
+  {
     "id": 1765702000002,
     "name": "Coriander Seeds",
     "description": "Fresh Coriander Seeds",
@@ -32,6 +41,15 @@
     "description": "Organic Chakaiya Amla",
     "image": "/uploads/1765701849538-amla.jpeg",
     "details": "Premium organic Chakaiya Amla (Indian gooseberries) rich in vitamin C. Traditionally valued for health benefits. Harvested and processed with utmost care to preserve nutritional value.",
+    "badge": "Seasonal",
+    "seasonal": "We don't fight with nature to change the product cycle. We respect the seasons and harvest only when the time is right. Contact us to check current availability."
+  },
+  {
+    "id": 1765702000004,
+    "name": "Jamun",
+    "description": "Organic Indian Blackberries",
+    "image": "/uploads/jamun.jpg",
+    "details": "Fresh, juicy jamun (Indian blackberries) naturally grown without any synthetic pesticides. These nutrient-rich berries are traditionally valued for their health benefits and unique sweet-tart flavor. Harvested at peak ripeness from our organic orchards.",
     "badge": "Seasonal",
     "seasonal": "We don't fight with nature to change the product cycle. We respect the seasons and harvest only when the time is right. Contact us to check current availability."
   }

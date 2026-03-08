@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { useProducts } from '@/context/ProductsContext';
 import ProduceSidebar from '@/components/ProduceSidebar';
@@ -97,6 +98,43 @@ export default function Home() {
               <p>{t('home.sustainable.description')}</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className={styles.contactSectionHome}>
+        <div className={styles.contactContentHome}>
+          <h2>{t('contact.title')}</h2>
+          <p className={styles.contactSubtitle}>{t('contact.subtitle')}</p>
+          
+          <div className={styles.contactQuickLinks}>
+            <a href="tel:+919636117070" className={styles.quickLink}>
+              <span>📞</span>
+              <div>
+                <div className={styles.linkLabel}>{t('contact.phone')}</div>
+                <div className={styles.linkValue}>+91 9636117070</div>
+              </div>
+            </a>
+            
+            <a href="https://wa.me/919636117070" target="_blank" rel="noopener noreferrer" className={styles.quickLink}>
+              <span>💬</span>
+              <div>
+                <div className={styles.linkLabel}>{t('contact.whatsapp')}</div>
+                <div className={styles.linkValue}>+91 9636117070</div>
+              </div>
+            </a>
+            
+            <a href="mailto:omprakshgagrani@gmail.com" className={styles.quickLink}>
+              <span>✉️</span>
+              <div>
+                <div className={styles.linkLabel}>{t('contact.email')}</div>
+                <div className={styles.linkValue}>omprakshgagrani@gmail.com</div>
+              </div>
+            </a>
+          </div>
+
+          <Link href="/contact" className={styles.contactCTA}>
+            {t('contact.title')} →
+          </Link>
         </div>
       </section>
 

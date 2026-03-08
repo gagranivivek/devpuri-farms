@@ -88,7 +88,7 @@
 }
 
 .imageContainer {
-    height: 240px;
+    height: 180px;
     background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
     display: flex;
     align-items: center;

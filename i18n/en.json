@@ -4,7 +4,8 @@
     "about": "About",
     "practices": "Practices",
     "produce": "Produce",
-    "gallery": "Gallery"
+    "gallery": "Gallery",
+    "contact": "Contact"
   },
   "home": {
     "title": "Welcome to Devpuri Farms",
@@ -68,6 +69,17 @@
     "title": "Farm Theory Gallery",
     "subtitle": "A glimpse into our sustainable farming life.",
     "empty": "No photos yet."
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "We'd love to hear from you. Reach out today!",
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "address": "Address",
+    "hours": "Hours",
+    "open": "Mon - Sun: 9:00 AM - 6:00 PM",
+    "message": "Send us a message anytime. We'll get back to you as soon as possible."
   },
   "footer": "Sustainable. Organic. Local."
 }
