@@ -142,6 +142,54 @@
     color: var(--color-text);
 }
 
+.reservationBox {
+    background: linear-gradient(135deg, rgba(251, 146, 60, 0.08) 0%, rgba(245, 158, 11, 0.08) 100%);
+    border-left: 4px solid #f97316;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.reservationTitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #f97316;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--spacing-md);
+}
+
+.reservationText {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.seasonalBox {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.08) 0%, rgba(59, 130, 246, 0.08) 100%);
+    border-left: 4px solid #22c55e;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.seasonalTitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #22c55e;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--spacing-md);
+}
+
+.seasonalText {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
 .priceSection {
     display: flex;
     align-items: center;

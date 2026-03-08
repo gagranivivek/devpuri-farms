@@ -31,6 +31,20 @@ export default function ProductModal({ product, onClose }) {
                             <p className={styles.detailsText}>{product.details}</p>
                         </div>
 
+                        {product.reservation && (
+                            <div className={styles.reservationBox}>
+                                <h3 className={styles.reservationTitle}>⚠️ Important Notice</h3>
+                                <p className={styles.reservationText}>{product.reservation}</p>
+                            </div>
+                        )}
+
+                        {product.seasonal && (
+                            <div className={styles.seasonalBox}>
+                                <h3 className={styles.seasonalTitle}>🌿 Seasonal Availability</h3>
+                                <p className={styles.seasonalText}>{product.seasonal}</p>
+                            </div>
+                        )}
+
                         {product.price && (
                             <div className={styles.priceSection}>
                                 <span className={styles.priceLabel}>Price:</span>

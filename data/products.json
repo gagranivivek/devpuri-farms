@@ -4,27 +4,33 @@
     "name": "Wheat",
     "description": "Grown With Care",
     "image": "/uploads/wheat-bag.jpg",
-    "details": "Naturally grown local high quality wheat with no harmful chemicals. Graded to make ready to consume. Sourced directly from our sustainable farms ensuring the highest standards of purity and nutrition."
+    "details": "Naturally grown local high quality wheat with no harmful chemicals. Graded to make ready to consume. Sourced directly from our sustainable farms ensuring the highest standards of purity and nutrition.",
+    "badge": "Pre-booking Open",
+    "reservation": "Since we only deal in locally grown products, supply is limited. Contact us to make a reservation for the current harvest. Note: We have a minimum quantity requirement for delivery orders, unless you prefer to collect it directly from our site."
   },
   {
     "id": 1765702000002,
     "name": "Coriander Seeds",
     "description": "Fresh Coriander Seeds",
     "image": "/uploads/Coriander-bag.webp",
-    "details": "Premium coriander seeds grown using traditional farming methods. Harvested at peak freshness and dried naturally. Perfect for adding authentic flavor to your culinary creations."
+    "details": "Premium coriander seeds grown using traditional farming methods. Harvested at peak freshness and dried naturally. Perfect for adding authentic flavor to your culinary creations.",
+    "badge": "Pre-booking Open",
+    "reservation": "Since we only deal in locally grown products, supply is limited. Contact us to make a reservation for the current harvest. Note: We have a minimum quantity requirement for delivery orders, unless you prefer to collect it directly from our site."
   },
   {
     "id": 1765640256423,
-    "name": "lemon",
-    "description": "Lemons",
+    "name": "Lemon",
+    "description": "Kagazi Lemons",
     "image": "/uploads/1765640256418-lemon.jpg",
-    "details": "Fresh, vibrant lemons packed with natural citrus goodness. Grown in our organic orchards without any synthetic pesticides. Perfect for your kitchen needs."
+    "details": "Fresh, vibrant lemons packed with natural citrus goodness. Grown in our organic orchards without any synthetic pesticides. Perfect for your kitchen needs.",
+    "seasonal": "We don't fight with nature to change the product cycle. We respect the seasons and harvest only when the time is right. Contact us to check current availability."
   },
   {
     "id": 1765701849541,
     "name": "Amla",
     "description": "Organic Chakaiya Amla",
     "image": "/uploads/1765701849538-amla.jpeg",
-    "details": "Premium organic Chakaiya Amla (Indian gooseberries) rich in vitamin C. Traditionally valued for health benefits. Harvested and processed with utmost care to preserve nutritional value."
+    "details": "Premium organic Chakaiya Amla (Indian gooseberries) rich in vitamin C. Traditionally valued for health benefits. Harvested and processed with utmost care to preserve nutritional value.",
+    "seasonal": "We don't fight with nature to change the product cycle. We respect the seasons and harvest only when the time is right. Contact us to check current availability."
   }
 ]

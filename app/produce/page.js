@@ -39,6 +39,7 @@ export default function Produce() {
                                     onClick={() => setSelectedProduct(product)}
                                     style={{ cursor: 'pointer' }}
                                 >
+                                    {product.badge && <div className={styles.badge}>{product.badge}</div>}
                                     <div className={styles.imageContainer}>
                                         {product.image && !product.image.includes('placeholder') ? (
                                             <img src={product.image} alt={product.name} className={styles.productImage} />
