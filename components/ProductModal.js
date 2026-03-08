@@ -27,7 +27,6 @@ export default function ProductModal({ product, onClose }) {
 
                     <div className={styles.infoSection}>
                         <h2 className={styles.name}>{product.name}</h2>
-                        <p className={styles.description}>{product.description}</p>
                         
                         <div className={styles.detailsBox}>
                             <h3 className={styles.detailsTitle}>{t('modal.productDetails')}</h3>
