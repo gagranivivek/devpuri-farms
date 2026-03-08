@@ -79,6 +79,28 @@ export default function Contact() {
               </div>
             </div>
           </div>
+
+          <div className={styles.mapSection}>
+            <h2>Find Us on the Map</h2>
+            <div className={styles.mapContainer}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.8372857314446!2d75.62696652346846!3d25.345890311282847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396d3e8e1234567b%3A0x1234567890abcdef!2sDevpuri%2C%20Shahpura%2C%20Bhilwara%2C%20Rajasthan%20311404!5e0!3m2!1sen!2sin!4v1234567890123"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <a 
+              href="https://maps.app.goo.gl/YNVpSVg7TP2theHq8" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.openMapLink}
+            >
+              Open in Google Maps →
+            </a>
         </div>
       </section>
     </main>
