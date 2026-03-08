@@ -23,7 +23,8 @@
     "sustainable": {
       "title": "Sustainable Future",
       "description": "Using solar power and regenerative agriculture to protect our land for generations. Every harvest strengthens our soil and protects our environment."
-    }
+    },
+    "contactSection": "Get In Touch With Us"
   },
   "about": {
     "title": "Roots That Run Deep: The Gagrani Legacy",
@@ -79,7 +80,18 @@
     "address": "Address",
     "hours": "Hours",
     "open": "Mon - Sun: 9:00 AM - 6:00 PM",
-    "message": "Send us a message anytime. We'll get back to you as soon as possible."
+    "message": "Send us a message anytime. We'll get back to you as soon as possible.",
+    "findOnMap": "Find Us on the Map",
+    "openMaps": "Open in Google Maps →",
+    "detailsPhone": "+91 9636117070",
+    "detailsEmail": "omprakshgagrani@gmail.com",
+    "detailsAddress": "Devpuri, Shahpura, Bhilwara, Rajasthan 311404, India",
+    "detailsHours": "Mon - Sun: 9:00 AM - 6:00 PM"
   },
-  "footer": "Sustainable. Organic. Local."
+  "footer": "Sustainable. Organic. Local.",
+  "modal": {
+    "productDetails": "Product Details",
+    "close": "Close",
+    "contactUs": "Contact Us →"
+  }
 }

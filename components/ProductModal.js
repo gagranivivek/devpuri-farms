@@ -1,9 +1,11 @@
 'use client';
 
 import Link from 'next/link';
+import { useLanguage } from '@/context/LanguageContext';
 import styles from './ProductModal.module.css';
 
 export default function ProductModal({ product, onClose }) {
+    const { t } = useLanguage();
     if (!product) return null;
 
     return (
@@ -28,7 +30,7 @@ export default function ProductModal({ product, onClose }) {
                         <p className={styles.description}>{product.description}</p>
                         
                         <div className={styles.detailsBox}>
-                            <h3 className={styles.detailsTitle}>Product Details</h3>
+                            <h3 className={styles.detailsTitle}>{t('modal.productDetails')}</h3>
                             <p className={styles.detailsText}>{product.details}</p>
                         </div>
 
@@ -55,10 +57,10 @@ export default function ProductModal({ product, onClose }) {
 
                         <div className={styles.actionButtons}>
                             <button className={styles.actionButton} onClick={onClose}>
-                                Close
+                                {t('modal.close')}
                             </button>
                             <Link href="/contact" className={styles.contactButton}>
-                                Contact Us →
+                                {t('modal.contactUs')}
                             </Link>
                         </div>
                     </div>
