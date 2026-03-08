@@ -23,6 +23,7 @@
     "description": "Kagazi Lemons",
     "image": "/uploads/1765640256418-lemon.jpg",
     "details": "Fresh, vibrant lemons packed with natural citrus goodness. Grown in our organic orchards without any synthetic pesticides. Perfect for your kitchen needs.",
+    "badge": "Seasonal",
     "seasonal": "We don't fight with nature to change the product cycle. We respect the seasons and harvest only when the time is right. Contact us to check current availability."
   },
   {
@@ -31,6 +32,7 @@
     "description": "Organic Chakaiya Amla",
     "image": "/uploads/1765701849538-amla.jpeg",
     "details": "Premium organic Chakaiya Amla (Indian gooseberries) rich in vitamin C. Traditionally valued for health benefits. Harvested and processed with utmost care to preserve nutritional value.",
+    "badge": "Seasonal",
     "seasonal": "We don't fight with nature to change the product cycle. We respect the seasons and harvest only when the time is right. Contact us to check current availability."
   }
 ]
