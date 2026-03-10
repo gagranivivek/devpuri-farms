@@ -1,29 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
+import galleryData from '@/data/gallery.json';
 import styles from './page.module.css';
 
 export default function Gallery() {
-    const [galleryItems, setGalleryItems] = useState([]);
     const { t } = useLanguage();
-
-    // Fetch gallery items on mount
-    useEffect(() => {
-        fetchGallery();
-    }, []);
-
-    const fetchGallery = async () => {
-        try {
-            const res = await fetch('/api/gallery');
-            if (res.ok) {
-                const data = await res.json();
-                setGalleryItems(data);
-            }
-        } catch (error) {
-            console.error('Failed to fetch gallery:', error);
-        }
-    };
 
     return (
         <main className={`container ${styles.main}`}>
@@ -31,17 +13,22 @@ export default function Gallery() {
             <p className={styles.subtitle}>{t('gallery.subtitle')}</p>
 
             <section className={styles.galleryGrid}>
-                {galleryItems.length > 0 ? (
-                    galleryItems.map((item) => (
-                        <div key={item.id} className={styles.galleryItem}>
+                {galleryData.length > 0 ? (
+                    galleryData.map((item) => (
+                        <div 
+                            key={item.id} 
+                            className={styles.galleryItem}
+                            style={{ gridColumn: `span ${item.span || 1}` }}
+                        >
                             <div className={styles.imageWrapper}>
-                                <img src={item.url} alt={item.description || "Gallery Item"} className={styles.galleryImage} />
+                                <img src={item.url} alt={item.title || "Gallery Item"} className={styles.galleryImage} />
                             </div>
-                            {item.description && (
-                                <div className={styles.caption}>
+                            <div className={styles.overlay}>
+                                {item.title && <h3 className={styles.itemTitle}>{item.title}</h3>}
+                                {item.description && (
                                     <p className={styles.descriptionText}>{item.description}</p>
-                                </div>
-                            )}
+                                )}
+                            </div>
                         </div>
                     ))
                 ) : (

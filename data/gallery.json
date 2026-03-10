@@ -1,8 +1,107 @@
 [
   {
-    "id": 1765642880825,
-    "url": "/uploads/1765642880822-amla.jpeg",
-    "description": "Nestled in the sun-drenched landscapes of Rajasthan, where the arid climate and resilient soils create the perfect conditions for robust growth, our organic amla (Indian gooseberry) thrives naturally. Rajasthan's dry subtropical environment, with its tolerance for saline and alkaline soils (pH 6.5–9.5), makes it an ideal region for cultivating this hardy superfruit.",
-    "timestamp": "2025-12-13T16:21:20.825Z"
+    "id": 1,
+    "url": "/gallery/IMG_20200108_161947.jpg",
+    "title": "Farm at Dawn",
+    "description": "Beautiful morning light breaking across our fields with fresh dew on the crops",
+    "span": 2
+  },
+  {
+    "id": 2,
+    "url": "/gallery/IMG_20200118_152506.jpg",
+    "title": "Harvest Time",
+    "description": "Golden hour moments during the harvesting season showing the fruits of our labor",
+    "span": 1
+  },
+  {
+    "id": 3,
+    "url": "/gallery/IMG_20200119_084735.jpg",
+    "title": "Morning in the Fields",
+    "description": "Early morning routine at Devpuri Farms with the sun rising over our sustainable fields",
+    "span": 1
+  },
+  {
+    "id": 4,
+    "url": "/gallery/IMG_20200308_082716.jpg",
+    "title": "Spring Growth",
+    "description": "New growth emerging in spring as our plants begin their seasonal journey",
+    "span": 1
+  },
+  {
+    "id": 5,
+    "url": "/gallery/IMG_20200314_164944.jpg",
+    "title": "Field Work",
+    "description": "Hard work in the fields - the hands that nurture our organic produce",
+    "span": 1
+  },
+  {
+    "id": 6,
+    "url": "/gallery/IMG_20200726_083728.jpg",
+    "title": "Summer Season",
+    "description": "Mid-summer view of our thriving crops under the bright Rajasthan sun",
+    "span": 2
+  },
+  {
+    "id": 7,
+    "url": "/gallery/IMG_20200726_083944.jpg",
+    "title": "Lush Growth",
+    "description": "Vibrant and healthy crop growth showing the results of our organic practices",
+    "span": 1
+  },
+  {
+    "id": 8,
+    "url": "/gallery/IMG_20200809_102917.jpg",
+    "title": "Monsoon Blessings",
+    "description": "Monsoon season brings life and energy to our fields",
+    "span": 1
+  },
+  {
+    "id": 9,
+    "url": "/gallery/IMG_20200927_101043.jpg",
+    "title": "Post-Monsoon Vitality",
+    "description": "Fields revitalized after the monsoon season showing peak growth",
+    "span": 1
+  },
+  {
+    "id": 10,
+    "url": "/gallery/PXL_20230628_133710068~2.jpg",
+    "title": "Sunny Day at Farm",
+    "description": "Clear skies and perfect farming conditions at Devpuri Farms",
+    "span": 2
+  },
+  {
+    "id": 11,
+    "url": "/gallery/PXL_20231222_053330537.jpg",
+    "title": "Winter Serenity",
+    "description": "Peaceful winter morning in the fields with crystalline clarity",
+    "span": 1
+  },
+  {
+    "id": 12,
+    "url": "/gallery/PXL_20241110_061545910.MP.jpg",
+    "title": "Autumn Landscape",
+    "description": "Golden autumn tones lighting up our sustainable farm landscape",
+    "span": 1
+  },
+  {
+    "id": 13,
+    "url": "/gallery/PXL_20241205_064059774.jpg",
+    "title": "Winter Preparations",
+    "description": "Preparing fields for winter crops with careful planning and care",
+    "span": 1
+  },
+  {
+    "id": 14,
+    "url": "/gallery/PXL_20251130_113456450.jpg",
+    "title": "Field Survey",
+    "description": "Regular inspections to ensure healthy crop development",
+    "span": 2
+  },
+  {
+    "id": 15,
+    "url": "/gallery/PXL_20251214_114005385.jpg",
+    "title": "Year-Round Commitment",
+    "description": "Our dedication to sustainable farming continues through every season",
+    "span": 1
   }
 ]
