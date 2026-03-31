@@ -36,6 +36,7 @@ export default function ProduceSidebar({ products, selectedId }) {
                   width={40}
                   height={40}
                   className={styles.thumbnailImage}
+                  unoptimized
                 />
               </div>
             ) : (
