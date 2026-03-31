@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './ProduceSidebar.module.css';
 
 export default function ProduceSidebar({ products, selectedId }) {
@@ -25,11 +26,23 @@ export default function ProduceSidebar({ products, selectedId }) {
           <Link
             key={product.id}
             href={`/produce?id=${product.id}`}
-            className={`${styles.sidebarItem} ${selectedId === product.id ? styles.active : ''}`}
+            className={`${styles.sidebarItem} ${selectedId === product.id.toString() ? styles.active : ''}`}
           >
-            <span className={styles.icon}>
-              {getProductIcon(product.name)}
-            </span>
+            {product.image && !product.image.includes('placeholder') ? (
+              <div className={styles.thumbnail}>
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  width={40}
+                  height={40}
+                  className={styles.thumbnailImage}
+                />
+              </div>
+            ) : (
+              <span className={styles.icon}>
+                {getProductIcon(product.name)}
+              </span>
+            )}
             <span className={styles.label}>{product.name}</span>
           </Link>
         ))}
@@ -40,6 +53,11 @@ export default function ProduceSidebar({ products, selectedId }) {
 
 function getProductIcon(productName) {
   const icons = {
+    'wheat': '🌾',
+    'coriander': '🌿',
+    'lemon': '🍋',
+    'amla': '🫐',
+    'jamun': '🫐',
     'tomato': '🍅',
     'carrot': '🥕',
     'lettuce': '🥬',

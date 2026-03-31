@@ -7,6 +7,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { useProducts } from '@/context/ProductsContext';
 import ProduceSidebar from '@/components/ProduceSidebar';
 import ProductModal from '@/components/ProductModal';
+import HeroSection from '@/components/HeroSection';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -22,17 +23,7 @@ export default function Home() {
 
   return (
     <main>
-      <section className={styles.hero}>
-        <img
-          src="/hero.png"
-          alt="Sustainable Farm at Sunrise"
-          className={styles.heroImage}
-        />
-        <div className={styles.heroContent}>
-          <h1 className={styles.title}>{t('home.title')}</h1>
-          <p className={styles.subtitle}>{t('home.subtitle')}</p>
-        </div>
-      </section>
+      <HeroSection t={t} />
 
       <section className={styles.produceSection}>
         <div className={styles.produceContainer}>
